@@ -72,7 +72,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins("http://localhost:4200", "http://localhost:5001", "https://letterboxd-eight.vercel.app")
+        policy.WithOrigins("http://localhost:4200", "http://localhost:5001")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
